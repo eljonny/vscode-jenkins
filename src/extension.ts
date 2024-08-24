@@ -12,7 +12,7 @@ const JENKINS_CONFIG_KEY = 'jenkins';
 /**
  * Returns the JenkinsAPI instance for the current workspace configuration
  */
-function getJenkinsApi() {    
+function getJenkinsApi() {
     return JenkinsApi.getCurrent(vscode.workspace.getConfiguration(JENKINS_CONFIG_KEY));
 }
 

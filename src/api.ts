@@ -41,9 +41,17 @@ export class JenkinsApi {
         };
     }
     static getCurrent(config : vscode.WorkspaceConfiguration) {
-        const { endpoint, token, username } = config;
+        const { secure, endpoint, token, username } = config;
     
-        const host = `https://${endpoint}`;
+        let host;
+        if (secure)
+        {
+            host = `https://${endpoint}`;
+        }
+        else
+        {
+            host = `http://${endpoint}`;
+        }
     
         return new JenkinsApi(host, username, token);
     }
