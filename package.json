@@ -2,6 +2,9 @@
     "name": "vscode-jenkins",
     "displayName": "vscode-jenkins",
     "description": "Jenkins integration with vscode",
+    "repository": {
+        "url": "https://github.com/eljonny/vscode-jenkins"
+    },
     "version": "0.0.3",
     "publisher": "paulvarache",
     "engines": {
@@ -106,7 +109,7 @@
             "type": "object",
             "title": "jenkins configuration",
             "properties": {
-                "jenkins.secure" : {
+                "jenkins.secure": {
                     "type": "boolean",
                     "description": "Whether the endpoint is HTTPS.",
                     "default": true
@@ -140,9 +143,11 @@
         "@types/mocha": "^2.2.42",
         "@types/node": "^7.0.43",
         "@types/node-fetch": "^2.1.1",
+        "@types/vscode": "^1.39.0",
+        "@vscode/test-electron": "^1.6.1",
+        "@vscode/vsce": "^2.15.0",
         "tslint": "^5.20.0",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.36"
+        "typescript": "^4.6.3"
     },
     "dependencies": {
         "@types/form-data": "^2.2.1",

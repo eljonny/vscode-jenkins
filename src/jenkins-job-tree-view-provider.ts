@@ -47,7 +47,7 @@ export class JenkinsJobTreeViewProvider implements vscode.TreeDataProvider<Jenki
                     return;
                 }
                 this.root = [jobItem];
-                this.emitter.fire();
+                this.emitter.fire(jobItem);
             });
 
     }

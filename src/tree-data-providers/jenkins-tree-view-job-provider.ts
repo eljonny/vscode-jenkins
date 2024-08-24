@@ -52,6 +52,6 @@ export class JenkinsTreeViewJobProvider implements vscode.TreeDataProvider<Jenki
     }
     rebuildTree() {
         this.tree.rebuild();
-        this.emitter.fire();
+        this.emitter.fire(this.tree.root[0]);
     }
 }
