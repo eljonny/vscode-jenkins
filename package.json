@@ -3,7 +3,7 @@
     "displayName": "vscode-jenkins",
     "description": "Jenkins integration with vscode",
     "repository": {
-        "url": "https://github.com/eljonny/vscode-jenkins"
+        "url": "https://github.com/paulvarache/vscode-jenkins"
     },
     "version": "0.0.4",
     "publisher": "paulvarache",
